@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{% static 'img/hobby4.jpg' %}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About Me</h1>
+                            <span class="subheading">성신여대 멋쟁이 사자처럼 10기 윤수윤</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br/>
+                        <h2>소개</h2>
+                        <p>정보시스템공학과에 재학 중인 20학번 윤수윤입니다.<br/>
+                        현재는 멋쟁이 사자처럼 10기에서 백엔드를 공부하고 있지만, 프론트엔드와 백엔드를 두루 다루는 풀스택 개발자가 되는 것이 저의 목표입니다.</p>
+                        <br/><hr class="my-4">
+                    </div>
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br/>
+                        <h4>취미 1) 게임</h4>
+                        <p>메이플스토리, 마인크래프트, 스타듀밸리 등</p>
+                        <table>
+                            <tr>
+                              <td><img alt="" width="300" src="{% static '/img/hobby1.jpg' %}" /></td><td><img alt="" width="300" src="{% static '/img/hobby2.jpg' %}" /></td>
+                            <tr>
+                        </table>
+                        <table>
+                            <tr>
+                              <td><img alt="" width="300" src="{% static '/img/hobby3.png' %}" /></td><td><img alt="" width="300" src="{% static '/img/hobby5.jpg' %}" /></td>
+                            <tr>
+                        </table>
+                        <p>이 외에도 다양한 게임을 즐깁니다.</p>
+                        <br/><br/>
+                        
+                        <h4>취미 2) 악기 연주</h4>
+                        <div style="text-align: center;">
+                            <img alt="" width="500" src="{% static '/img/hobby4.jpg' %}" />
+                        </div>
+                        <p>통기타를 배운 경험이 있고, 최근에는 우쿨렐레를 중고 거래로 구매하여 독학하고 있습니다.</p>
+                        <br/><br>
+
+                        <h4>취미 3) 독서</h4>
+                        <table>
+                            <tr>
+                              <td><img alt="" width="300" src="{% static '/img/hobby6.jpg' %}" /></td><td><img alt="" width="300" src="{% static '/img/hobby7.jpg' %}" /></td>
+                            <tr>
+                        </table>
+                        <p>시간이 없어 예전에 비해서 독서를 즐기지는 않지만, 어릴 때부터 꾸준하게 독서를 했습니다.</p>
+                        <p>종이책을 더 선호하는 편이지만, 편의성 때문에 이북리더기 구매를 고민 중입니다.</p>
+                        <br/><br>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}

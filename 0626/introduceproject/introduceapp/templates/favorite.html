@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{% static 'img/favorite-bg.jpg' %}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="post-heading">
+                    <h1>Music, Place, etc...</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Post Content-->
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <br />
+                <h2>Music</h2>
+                <p>주로 락이나 인디 음악을 즐겨 듣습니다.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u-CCHDQVzr4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GZXoQcW4SB4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lWLVyDKsEsI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p>최근 가장 즐겨 듣는 세 곡입니다.</br>
+                    걸그룹 노래는 신곡이 나올 때마다 찾아 듣는 편입니다.</p>
+                <br />
+                <hr class="my-4">
+                <br />
+
+                <h2>Place</h2>
+                <br />
+                <h5>여성 전용 술집</h5>
+                <table>
+                    <tr>
+                        <td><a href="https://www.instagram.com/zzamzidal/"><img alt="" width="300" src="{% static '/img/place1.jpg' %}" /></a></td>
+                        <td><a href="https://www.instagram.com/gamrae_/"><img alt="" width="300" src="{% static '/img/place2.jpg' %}" /></a></td>
+
+                    <tr>
+                </table>
+                <p>어쩌다가 친구들과 여성 전용 술집들을 자주 방문할 기회가 생겼는데, 그때 분위기가 정말 좋았어서 그 이후로도 즐겨 찾게 되었습니다.</br>
+                    유명하지만 웨이팅이 길거나 멀어서 가지 못한 술집이 많아서, 종강 때 많은 곳을 들러보고 싶습니다.</p>
+                <br /><br />
+                <h5>비건 식당 <a href="https://www.instagram.com/veggies_mealcafe/">(베지스)</a></h5>
+                <div style="text-align: center;">
+                    <img alt="" width="500" src="{% static '/img/place3.jpg' %}" />
+                </div>
+                <p>최근에 비건 친구를 사귀게 되었는데, 그 친구 덕분에 알게 된 곳입니다. <br />
+                    비건에 관심을 가지던 찰나에 방문한 곳이라 더 특별한 공간이 되었습니다.<br />
+                    식당이 조금 좁지만 분위기도 좋고, 가격대도 크게 높지 않아 비건에 관심이 있거나 비건식을 접해보고 싶은 사람들에게 추천하고 싶은 곳입니다.
+                </p>
+                <br />
+                <hr class="my-4">
+                <br />
+
+                <h2>Image</h2>
+                <br/>
+                <div style="text-align: center;">
+                    <img alt="" width="400" src="{% static '/img/animal1.jpeg' %}" /><br />
+                    <img alt="" width="400" src="{% static '/img/animal2.jpg' %}" /><br />
+                    <img alt="" width="400" src="{% static '/img/animal3.jpg' %}" />
+                </div>
+                <p>웃긴 동물 사진을 모으는 것을 좋아합니다. 그 중에서도 요즘 가장 꽂힌 사진 세 장입니다.</p>
+                <br />
+                <hr class="my-4">
+                <br />
+
+                <h2>Character</h2>
+                <br/>
+                <div style="text-align: center;">
+                    <img alt="" width="400" src="{% static '/img/char.jpg' %}" />
+                </div>
+                <p>애니메이션 '위 베어 베어스'에 나오는 아이스베어를 좋아합니다.<br/>
+                제가 이 캐릭터를 좋아하는 것을 친구들도 알고 있어서, 생일마다 이 캐릭터 관련 선물을 꼭 하나씩 받는 것 같습니다.</p> 
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
